@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Banco Inter</title>
+		<link rel="icon" href="img/logo.png">
+		
+		<!-- CUSTOM CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+    	<!-- FONT AWESOME -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    	<!-- FONT GOOGLE -->
+ 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- HEADER -->
+		<header class="cabecalho container">
+			<a href="index.html"><h1 class="logo">Conta Digital</h1></a>
+
+			<!-- MENU -->
+ 			<button class="btn-menu bg-gradient"> <i class="fa fa-bars fa-lg" aria-hidden="true"></i> </button>
+ 		
+ 			<nav class="menu">
+ 				<a class="btn-close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a>	
+ 				<ul>
+ 					<li><a href="#">Início</a></li>
+ 					<li><a href="#">i-safe</a></li>
+ 					<li><a href="#">Depósito por Boleto</a></li>
+ 					<li><a href="#">Depósito por Cheque</a></li>
+ 					<li><a href="#">Inter pag</a></li>
+ 					<li><a href="#">Conta Digital</a></li>
+ 					<li><a href="#">Débito automático</a></li>
+ 					<li><a href="#">Pagamentos</a></li>
+ 					<li><a href="#">Transfências</a></li>
+ 					<li><a href="#">Agendamentos</a></li>
+ 					<li><a href="#">Cartões</a></li>
+ 					<li><a href="#">Recarga Celular</a></li>
+ 				</ul>
+ 			</nav>
+		</header>
+
+		<!-- HOME -->
+		<div class="saldo container">
+ 			<div class="title">
+ 				<h5>Saldo em conta</h5>
+ 				<h3>R$ 15,00</h3>
+ 			</div>
+
+ 			<div class="buttons">
+ 				<a href="#"><button class="btn btn-cadastrar bg-white radius"><a href="extrato.html">Extrato</a></button>
+ 				<button class="btn btn-sobre bg-black radius"><a href="#">Transferências</a></button>
+ 				<button class="btn btn-sobre bg-black radius"><a href="#">Pagamentos</a></button>
+ 			</div>
+ 		</div>
+
+ 		<!-- CORPO -->
+ 		<div class="corpo">
+ 			<img src="img/corpo.png">
+ 		</div>
+
+		<!-- JQUERY (JS) -->
+  		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  		<script>
+ 			$(".btn-menu").click(function(){
+ 				$(".menu").show();
+ 			});
+ 			$(".btn-close").click(function(){
+ 				$(".menu").hide();
+ 			});
+  		</script>
+	</body>
+</html>

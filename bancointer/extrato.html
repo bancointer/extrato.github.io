@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Banco Inter</title>
+		<link rel="icon" href="img/logo.png">
+
+    	<!-- FONT AWESOME -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    	<!-- FONT GOOGLE -->
+ 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+ 		<!-- CSS DA PÁGINA -->
+ 		<style>
+ /* ==RESET== */
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body {background-color: #f5f5f5;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+/* ==CONTAINER== */
+.container {
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+	text-align: center;
+}
+
+
+/* CABECALHO */
+.cabecalho {
+	width: 100%;
+	float: left; 
+	padding: 10px 8%; 
+	background-color: #ff7a00;
+}
+.logo {
+	padding-top: 15px;
+	float: left;
+	color: #fff;
+	font-size: 1.5em;
+}
+.btn-menu {
+	width: 56px;
+	height: 56px;
+	float: right;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background-color: #ff7a00;
+}
+
+/* MENU */
+.menu {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #000;
+	top: 0;
+	left: 0;
+}
+
+.btn-close {
+	font-size: 1.5em;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+	margin: 2% 3% 0 0;
+}
+
+.menu ul {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.menu li {padding: 1.5%;}
+
+.menu li a {
+	font-size: 2em;
+	color: #fff;
+	padding: 1.5% 3%;
+}
+
+/* SALDO */
+.saldo {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 3% 4%;
+}
+
+.title {
+	width: 50%;
+	float: left;
+	padding-top: 15px;
+}
+
+.title h5 {
+	font-size: 1.0em;
+	color: silver;
+	font-weight: 500;
+}
+
+.title h3 {
+	font-size: 1.5em;
+	color: #ff7a00;
+	font-weight: 900;
+}
+
+.buttons {
+	width: 50%; 
+	margin-top: 2%;
+	float: left;
+}
+
+.btn {
+	width: 100%;
+	font-size: 1.0em;
+	text-align: center;
+}
+.btn-cadastrar {
+	color: #130400;
+	border: solid 1px #ff7a00;
+	border-radius: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: -3px;
+	padding-right: -3px;
+}
+
+.btn-sobre {
+	color: #130400;
+	margin-top: 2%;
+	border: solid 1px #ff7a00;
+	border-radius: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: -3px;
+	padding-right: -3px;
+}
+
+/* EXTRATO */
+.extrato {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.extrato h3 {
+	color: #5f5f5f;
+	font-weight: 900;
+	border-top: solid 2px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.extrato h4 {
+	font-weight: 500;
+	border-bottom: solid 1px silver;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.extrato p {
+	font-weight: 300;
+	border-bottom: solid 1px silver;
+}
+ 		</style>
+	</head>
+
+	<body>
+		<!-- HEADER -->
+		<header class="cabecalho container">
+			<a href="index.html"><h1 class="logo">Extrato Conta Digital</h1></a>
+
+			<!-- MENU -->
+ 			<button class="btn-menu bg-gradient"> <i class="fa fa-bars fa-lg" aria-hidden="true"></i> </button>
+ 		
+ 			<nav class="menu">
+ 				<a class="btn-close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a>	
+ 				<ul>
+ 					<li><a href="#">Início</a></li>
+ 					<li><a href="#">i-safe</a></li>
+ 					<li><a href="#">Depósito por Boleto</a></li>
+ 					<li><a href="#">Depósito por Cheque</a></li>
+ 					<li><a href="#">Inter pag</a></li>
+ 					<li><a href="#">Conta Digital</a></li>
+ 					<li><a href="#">Débito automático</a></li>
+ 					<li><a href="#">Pagamentos</a></li>
+ 					<li><a href="#">Transfências</a></li>
+ 					<li><a href="#">Agendamentos</a></li>
+ 					<li><a href="#">Cartões</a></li>
+ 					<li><a href="#">Recarga Celular</a></li>
+ 				</ul>
+ 			</nav>
+		</header>
+
+		<!-- HOME -->
+		<div class="saldo container">
+ 			<div class="title">
+ 				<h5>Saldo total disponível</h5>
+ 				<h3>R$ 15,00</h3>
+ 			</div>
+
+ 			<div class="buttons">
+ 				<button class="btn btn-sobre bg-black radius"><a href="#">Transferências</a></button>
+ 				<button class="btn btn-sobre bg-black radius"><a href="#">Pagamentos</a></button>
+ 			</div>
+ 		</div>
+
+ 		<!-- EXTRATO -->
+ 		<div class="extrato">
+ 			<h3>Últimos 7 dias</h3>
+ 			<h4>&nbsp;&nbsp;&nbsp;• 05 Agosto 2019</h4>
+ 			<p>Compra cartao - compra no estabelecimento pag*malibu<br>
+ 			<span style="color: red;">- R$5,00</span></p>
+ 			<p>Compra cartao - compra no estabelecimento sumup *arthurroldschoos<br>
+ 			<span style="color: red;">- R$25,00</span></p>
+ 			<p>Compra cartao - compra no estabelecimento fcia pague menos 837 B<br>
+ 			<span style="color: red;">- R$25,00</span></p>
+
+ 			<h4>&nbsp;&nbsp;&nbsp;• 04 Agosto 2019</h4>
+ 			<p>Compra cartao - compra no estabelecimento pag*malibu<br>
+ 			<span style="color: red;">- R$5,00</span></p>
+ 			<p>Compra cartao - compra no estabelecimento sumup *arthurroldschoos<br>
+ 			<span style="color: red;">- R$25,00</span></p>
+
+ 			<h4>&nbsp;&nbsp;&nbsp;• 03 Agosto 2019</h4>
+ 			<p>Compra cartao - compra no estabelecimento burger king<br>
+ 			<span style="color: red;">- R$25,00</span></p>
+ 			<p>Compra cartao - compra no estabelecimento pizzaria r. das pitangueiras<br>
+ 			<span style="color: red;">- R$74,90</span></p>
+ 			<p>Compra cartao - compra no estabelecimento drogasil av. das castanheiras<br>
+ 			<span style="color: red;">- R$144,00</span></p>
+
+ 			<h4>&nbsp;&nbsp;&nbsp;• 02 Agosto 2019</h4>
+ 			<p>Compra cartao - compra no estabelecimento pag*malibu<br>
+ 			<span style="color: red;">- R$15,00</span></p>
+ 		</div>
+	</body>
+</html>
